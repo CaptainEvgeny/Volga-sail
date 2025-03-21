@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 lang: ru-RU
 title: Волга-парус
 excerpt: Круизы на парусных яхтах по Волге. Обучение яхтингу
