@@ -8,7 +8,7 @@ excerpt: Круизы на парусных яхтах по Волге. Обуч
 #Тур по Горьковскому морю на морской парусной яхте 
 
 <div class="container">
-    <img src="images/photo1.jpg" alt="Яхта.Парус" width="50%">
+    <img src="images/photo1.jpg" alt="Яхта.Парус" width="51%">
     <img src="images/photo2.jpg" alt="Яхта.Парус" width="38%">
 </div>
 
