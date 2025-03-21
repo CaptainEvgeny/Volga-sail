@@ -9,7 +9,7 @@ excerpt: Круизы на парусных яхтах по Волге. Обуч
 
 <div class="container">
     <img src="images/photo1.jpg" alt="Яхта.Парус" width="50%">
-    <img src="images/photo2.jpg" alt="Яхта.Парус" width="40%">
+    <img src="images/photo2.jpg" alt="Яхта.Парус" width="38%">
 </div>
 
 Морской простор и свежий ветер. Бег по волнам под парусом. Красивые бухты и песчаные пляжи. Встреча заката в море.
