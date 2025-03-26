@@ -43,7 +43,9 @@ excerpt: Круизы на парусных яхтах по Горьковско
     <img src="images/Boat4.jpg" alt="Яхта.Парус" width="45%">
 </div>
 
-<img src="images/Boat4.jpg" alt="Яхта.Парус" width="90%" alighn="center">
+<div class="container">
+    <img src="images/Boat4.jpg" alt="Яхта.Парус" width="90%">
+</div>
 
 К вашим услугам для размещения доступна двухместная носовая каюта люкс и четыре спальных места в салоне.
 
