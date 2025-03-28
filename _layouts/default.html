@@ -18,15 +18,15 @@
             const body = document.body;
 
             if (width < 576) {
-                body.style.fontSize = '12px';
-            } else if (width < 768) {
                 body.style.fontSize = '13px';
-            } else if (width < 992) {
+            } else if (width < 768) {
                 body.style.fontSize = '14px';
-            } else if (width < 1200) {
+            } else if (width < 992) {
                 body.style.fontSize = '15px';
+            } else if (width < 1200) {
+                body.style.fontSize = '16pt';
             } else {
-                body.style.fontSize = '16px';
+                body.style.fontSize = '18pt';
             }
         }
 
