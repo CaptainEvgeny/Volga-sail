@@ -1,0 +1,387 @@
+/* Import Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  /* Updated Color Palette */
+  --primary-color: #0b7e8a;   /* Slightly brighter, less grey teal */
+  --secondary-color: #12a3b4; /* A coordinating brighter teal */
+  --accent-color: #67d1e0;    /* Clearer, lighter aqua accent */
+  --text-dark: #343a40;     /* Softer dark grey */
+  --text-light: #ffffff;     /* Pure white for better contrast */
+  --background-light: #ffffff;
+  --background-grey: #f8f9fa;  /* Cleaner grey */
+  --border-color: #e9ecef;   /* Matching grey border */
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-grey); /* Use CSS variable */
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Adjust scroll position for sticky header */
+}
+
+/* --- Header --- */
+header {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem 1rem; /* Simpler padding */
+    text-align: center;
+    position: sticky; /* Make header sticky again */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Display flex for layout */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Space out items */
+    align-items: center;
+}
+
+.header-title {
+    flex-basis: 100%; /* Take full width initially */
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .header-title {
+        flex-basis: auto; /* Allow title and nav side-by-side */
+        text-align: left;
+        margin-bottom: 0;
+    }
+    header {
+        padding: 1rem 2rem; /* More padding on wider screens */
+    }
+}
+
+header h1 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.8rem; /* Adjusted size */
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+header p.subtitle { /* Added class for subtitle */
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.85;
+    font-weight: 400;
+}
+
+/* --- Navigation Bar --- */
+header nav {
+    /* Removed background/border-radius - integrated into header flex */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav li {
+    margin: 0 5px; /* Reduced spacing */
+}
+
+header nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem; /* Slightly smaller nav links */
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: rgba(255, 255, 255, 0.15); /* Adjusted hover alpha */
+    color: var(--text-light);
+    outline: none;
+}
+
+/* --- Side menu --- */
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    height: 100vh; /* Высота на весь экран */
+    position: fixed; /* Фиксированное положение */
+}
+
+.menu-toggle {
+    display: none; /* Скрыть кнопку по умолчанию */
+}
+
+/* --- Main Content --- */
+.main-content {
+    margin-left: 250px; /* Отступ для основного контента */
+    padding: 20px;
+    flex-grow: 1;
+/*}
+
+main {*/
+    max-width: 1100px;
+    margin-top: 2rem;
+/*    margin: 2rem auto; /* Reduced top margin due to sticky header */
+ /*   padding: 1rem;*/
+    background: transparent; /* Remove main background/shadow */
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.page-container {
+    flex
+}
+
+/* --- Section Styling (Card-like) --- */
+section {
+    background-color: var(--background-light); /* White background for sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    margin-bottom: 2.5rem; /* Adjusted spacing */
+    padding: 2rem 2rem; /* Adjusted padding */
+    border-bottom: none; /* Remove old border */
+    overflow: hidden; /* Contain floats */
+}
+
+h2 {
+    color: var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 1.5rem; /* Adjusted margin */
+    font-size: 1.8rem; /* Adjusted size */
+    font-weight: 700;
+    text-align: left; /* Align left like reference */
+    border-bottom: 3px solid var(--accent-color); /* Add border back, use accent color */
+    display: inline-block; /* Make border only as wide as text */
+}
+
+section p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Image Containers --- */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    align-items: stretch;
+    justify-content: flex-start; /* Align items to start */
+}
+
+.container img, .container a {
+    /* Keep flexible grid for now, but maybe refine later based on content */
+    flex: 1 1 calc(33% - 15px);
+    min-width: 180px; /* Slightly smaller min-width */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4 / 3; /* Adjusted aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* --- Captain Section Specific --- */
+#captain {
+    /* Already has card styling from generic section rule */
+}
+
+#captain .float-image {
+    float: right; /* Float right for variation */
+    margin: 0 0 1rem 1.5rem; /* Adjust margin for right float */
+    width: 38%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#captain .float-image:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+#captain p {
+    font-size: 1rem; /* Reset captain text size */
+}
+
+/* --- Call to Action Section --- */
+.cta-section {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin: 3rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.cta-section h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--text-light);
+    color: var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 50px; /* Pill shape */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: var(--background-grey); /* Use variable */
+    color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    outline: none;
+}
+
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+    background: transparent;
+    color: var(--text-dark); /* Use dark text variable, slightly faded */
+    opacity: 0.7; /* Fade footer text slightly */
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    .container img {
+        flex-basis: calc(50% - 15px);
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    .cta-section h3 {
+        font-size: 1.4rem;
+    }
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 767px) { /* Match header breakpoint */
+    html {
+        scroll-padding-top: 60px; /* Adjust for potentially smaller header */
+    }
+    header {
+        justify-content: center; /* Center items when stacked */
+    }
+    .header-title {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    header h1 {
+        font-size: 1.6rem;
+    }
+    nav {
+        margin-top: 0.5rem;
+    }
+    main {
+        padding: 0.5rem;
+        margin: 1rem auto;
+    }
+    section {
+        padding: 1.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    #captain .float-image {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+        width: 60%;
+        max-width: 250px;
+    }
+    .sidebar {
+        width: 200px; /* Ширина бокового меню */
+        transform: translateX(-100%); /* Скрыть меню */
+        transition: transform 0.3s ease; /* Анимация */
+    }
+
+    .sidebar.active {
+        transform: translateX(0); /* Показать меню */
+    }
+
+    .main-content {
+        margin-left: 0; /* Убрать отступ */
+    }
+
+    .menu-toggle {
+        display: block; /* Показать кнопку */
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        position: absolute; /* Позиция кнопки */
+        top: 10px;
+        left: 10px;
+        z-index: 10; /* Чтобы кнопка была поверх меню */
+    }
+}
+
+@media (max-width: 576px) {
+    .container img {
+        flex-basis: calc(100% - 15px); /* Full width minus gap */
+        min-width: unset;
+    }
+    nav li {
+        margin: 0 2px;
+    }
+    nav a {
+        padding: 6px 8px;
+        font-size: 0.85rem;
+    }
+    section {
+        padding: 1.5rem 1rem;
+    }
+}
+
+
+/* --- AOS Animation Visibility --- */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+} 
