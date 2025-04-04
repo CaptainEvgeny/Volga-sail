@@ -26,7 +26,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Adjust scroll position for sticky header */
+    /*scroll-padding-top: 80px; /* Adjust scroll position for sticky header */
 }
 
 /* --- Header --- */
