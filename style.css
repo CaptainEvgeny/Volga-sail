@@ -113,6 +113,10 @@ header nav a:focus {
     outline: none;
 }
 
+.menu-container {
+    display: flex;
+}
+
 /* --- Side menu --- */
 .sidebar {
     width: 250px;
