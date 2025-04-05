@@ -323,6 +323,7 @@ footer {
     }
     section {
         padding: 1.5rem;
+	z-index: 1; /* Чтобы кнопка была поверх меню */
     }
     h2 {
         font-size: 1.5rem;
