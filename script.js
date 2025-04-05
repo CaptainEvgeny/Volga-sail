@@ -10,7 +10,7 @@ document.getElementById('menuToggle').addEventListener('click', function() {
 });
 // Закрытие меню при клике вне его
 document.addEventListener('click', function(event) {
-        if (!menu.contains(event.target) && event.target !== sidebar) {
-            menu.style.display = 'none';
+        if (!sidebar.contains(event.target) && event.target !== menuToggle) {
+            document.getElementById('sidebar').classList.remove('active');
         }
 });
