@@ -345,6 +345,7 @@ footer {
 
     .sidebar.active {
         transform: translateX(0); /* Показать меню */
+	z-index: 10; /* Чтобы кнопка была поверх меню */
     }
 
     .main-content {
