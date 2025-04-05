@@ -353,7 +353,7 @@ footer {
         /*display: block; /* Показать кнопку */
 	background-color: var(--text-light);
         color: var(--primary-color);
-        padding: 12px 20px; /*10px;*/
+        padding: 8px 20px; /*10px;*/
         border-radius: 50px; /* Pill shape */
         text-decoration: none;
         font-weight: 700;
