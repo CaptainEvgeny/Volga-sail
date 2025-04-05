@@ -353,7 +353,7 @@ footer {
         /*display: block; /* Показать кнопку */
 	background-color: var(--text-light);
         color: var(--primary-color);
-        padding: 12px 30px; /*10px;*/
+        padding: 12px 20px; /*10px;*/
         border-radius: 50px; /* Pill shape */
         text-decoration: none;
         font-weight: 700;
@@ -363,7 +363,7 @@ footer {
         border: none;
         cursor: pointer;
         position: fixed; /* Позиция кнопки */
-        top: 50px;
+        top: 80px;
         right: 10px;
         z-index: 10; /* Чтобы кнопка была поверх меню */
     }
