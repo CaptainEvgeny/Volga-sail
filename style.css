@@ -363,7 +363,7 @@ footer {
         border: none;
         cursor: pointer;
         position: fixed; /* Позиция кнопки */
-        top: 80px;
+        top: 90px;
         right: 10px;
         z-index: 10; /* Чтобы кнопка была поверх меню */
     }
