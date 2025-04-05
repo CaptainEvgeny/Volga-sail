@@ -340,12 +340,12 @@ footer {
         width: 200px; /* Ширина бокового меню */
         transform: translateX(-100%); /* Скрыть меню */
         transition: transform 0.3s ease; /* Анимация */
-	z-index: 10; /* Чтобы кнопка была поверх меню */
+	/*z-index: 10; /* Чтобы кнопка была поверх меню */
     }
 
     .sidebar.active {
         transform: translateX(0); /* Показать меню */
-	z-index: 10; /* Чтобы кнопка была поверх меню */
+	/*z-index: 10; /* Чтобы кнопка была поверх меню */
     }
 
     .main-content {
