@@ -8,3 +8,9 @@ AOS.init({
 document.getElementById('menuToggle').addEventListener('click', function() {
     document.getElementById('sidebar').classList.toggle('active');
 });
+// Закрытие меню при клике вне его
+document.addEventListener('click', function(event) {
+        if (!menu.contains(event.target) && event.target !== sidebar) {
+            menu.style.display = 'none';
+        }
+});
