@@ -59,6 +59,7 @@ header {
     }
     header {
         padding: 1rem 2rem; /* More padding on wider screens */
+	position: sticked; /* Приклеенное положение */
     }
 }
 
