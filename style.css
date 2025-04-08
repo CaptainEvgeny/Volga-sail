@@ -169,7 +169,7 @@ header nav a:focus {
 }
 @media (min-width: 768px) {
     .sticked-top20 {
-        position: sticky; /* Приклеенное положение */
+        position: sticked; /* Приклеенное положение */
         top: 20px;
     }
 }
