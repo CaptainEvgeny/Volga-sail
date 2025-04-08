@@ -14,3 +14,17 @@ document.addEventListener('click', function(event) {
             document.getElementById('sidebar').classList.remove('active');
         }
 });
+//работа с формой
+document.getElementById('openForm').onclick = function() {
+    document.getElementById('formModal').style.display = "block";
+}
+
+document.getElementsByClassName('close')[0].onclick = function() {
+    document.getElementById('formModal').style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('formModal')) {
+        document.getElementById('formModal').style.display = "none";
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горы-море-парус</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Горы-море-парус</h1>
+            <p class="subtitle">Круизы на парусных яхтах по Горьковскому морю. Обучение яхтингу</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#tour">Тур</a></li>
+                <li><a href="#included">Включено</a></li>
+                <li><a href="index.html#fleet">Яхты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="menu-container">
+	<button class="menu-toggle" id="menuToggle">☰</button>
+        <nav class="sidebar" id="sidebar">
+             <section class="sticked-top20" id="menu">
+                  <ul>
+                      <h3><li><a href="index.html">Главная</a></li></h3>
+                      <h3><li>День рождения на яхте</a></li></h3>
+		      <ul>
+                          <h4><li><a href="#tour">Прогулка</a></li></h4>
+                          <h4><li><a href="#included">Включено</a></li></h4>
+		      </ul>
+                      <h3><li><a href="index.html#fleet">Яхты</a></li></h3>
+                  </ul>
+ 	    </section>
+        </nav>
+
+    	<main class="main-content">
+            <section id="tour" data-aos="fade-up">
+                <h2>День рождения на яхте</h2>
+
+            	<div class="container" data-aos="fade-right">
+                    <img src="images/Birthday.jpg" alt="Яхта.Парус">
+            	</div>
+
+                <p> День рождения или корпоратив на яхте - это выгодно! </p>
+		<p>    ✔ не нужно украшать зал </p>
+		<p>    ✔ не нужны аниматоры </p>
+		<p>    ✔ все напитки и еда только свои </p>
+	        <p> Яхтинг - идеальный вид спорта для русского человека. Умеренные физические нагрузки сочетаются с игристым 
+		    В любом случае, хорошее настроение и активный отдых на воде гарантирован. 
+		    Мы выдаем спасательные жилеты и приглашаем взрослых и детей </p>
+	        <p> Для вас</p>
+		<p> ✅ Крейсерская яхта</p>
+		    На крейсерской яхте уютно в любую погоду. Каюта, удобства, мини-кухня, чайник, посуда и туалет — полный комфорт!</p>
+
+	        <p>☀Маршрут:</p>
+		<p>    — встречаемся на р.Санахта</p>
+		<p>    — выйдем в Горьковское море, увидим Чкаловск с воды, увидим Катунки и т.д.</p>
+
+	        <p> ☀Что будем делать?
+		    — ловить волны и ветер;
+		    — фотографироваться;
+		    — управлять парусной яхтой и обмениваться опытом.</p>
+ 
+	        <p>☀ форма одежды — удобная, желательно спортивная 
+		    При себе нужно иметь: 
+		    головной убор (кепка, косынка) 
+		    куртка (ветровка) 
+		    солнечные очки 
+		    крем от загара 
+		    сменная обувь (легкие кроссовки с немаркой подошвой) 
+		    хорошее настроение.</p>
+            </section>
+            <section id="included" data-aos="fade-up">
+                <h3>Стоимость</h3>
+		    <p> От 7000 р. за 2 часа, в зависимости от выбранной <a href="index.html#fleet">яхты</a>.</p>
+		    <p> Акции </p>
+		    <p> День Рождения – 10% </p>
+		    <p> 10% студентам по предъявлению студенческого билета</p>
+                <h3>Что включено</h3>
+		    <p> Аренда <a href="index.html#fleet">яхты</a> с капитаном, топливо, спасжилеты, камбуз (при наличии на выбранной яхте)</p>
+		    <p> <span style="color: var(--primary-color);">Не включены</span> продукты и напитки, услуги кока. Аренда SUP или виндсёрфинга. Трансфер к месту посадки. Подача яхты на посадку к месту отличному от базового</p>
+            </section>
+
+    </main>
+    </div>
+
+    <section class="cta-section" data-aos="fade-up">
+        <h3>Готовы к приключениям?</h3>
+        <button id="openForm" class="cta-button">Забронировать яхту!</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Горы-море-парус</p>
+    </footer>
+
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Записаться на тур</h2>
+            <p>Заполните форму и мы свяжемся с Вами</p>
+            <form id="registrationForm">
+                <p>
+                <input class="text-field_input" type="text" id="name" name="name" placeholder="Имя*" required></p>
+
+                <p>
+                <input class="text-field_input" type="tel" id="phone" name="phone" placeholder="Телефон*" pattern="[0-9()#&amp;+*-=.]+" title="Допустимы только цифры и спецсимволы (#, -, *, и т.п.)" required></p>
+
+                <p>
+                <input class="text-field_input" type="email" id="email" name="email" placeholder="e-mail"></p>
+
+                <p><label>
+                    <input type="checkbox" id="agreement" name="agreement" checked="checked" required>
+                    Согласен на обработку персональных данных *
+                </label></p>
+
+                <button type="submit">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
