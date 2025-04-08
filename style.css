@@ -124,7 +124,7 @@ header nav a:focus {
     padding: 1rem;
     background-color: #f4f4f4;
     height: 100vh; /* Высота на весь экран */
-    position: sticky; /* Приклеенное положение */
+    position: fixed; /* Приклеенное положение */
     top: 0;
 }
 
@@ -165,7 +165,7 @@ header nav a:focus {
 }
 
 .sticked-top20 {
-    position: sticky; /* Приклеенное положение */
+/*    position: sticky; /* Приклеенное положение */
     top: 20px;
 }
 
