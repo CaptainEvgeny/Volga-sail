@@ -59,7 +59,7 @@ header {
     }
     header {
         padding: 1rem 2rem; /* More padding on wider screens */
-	position: sticked; /* Приклеенное положение */
+    	position: sticky; /* Make header sticky again */
     }
 }
 
@@ -125,7 +125,6 @@ header nav a:focus {
     padding: 1rem;
     background-color: #f4f4f4;
     height: 100vh; /* Высота на весь экран */
-    position: sticked; /* Приклеенное положение */
     top: 0;
 }
 
