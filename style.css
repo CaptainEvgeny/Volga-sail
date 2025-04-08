@@ -124,7 +124,7 @@ header nav a:focus {
     padding: 1rem;
     background-color: #f4f4f4;
     height: 100vh; /* Высота на весь экран */
-    position: fixed; /* Приклеенное положение */
+    position: sticked; /* Приклеенное положение */
     top: 0;
 }
 
@@ -165,10 +165,14 @@ header nav a:focus {
 }
 
 .sticked-top20 {
-/*    position: sticky; /* Приклеенное положение */
     top: 20px;
 }
-
+@media (min-width: 768px) {
+    .sticked-top20 {
+        position: sticky; /* Приклеенное положение */
+        top: 20px;
+    }
+}
 /* --- Section Styling (Card-like) --- */
 section {
     background-color: var(--background-light); /* White background for sections */
@@ -423,6 +427,7 @@ footer {
         transform: translateX(-100%); /* Скрыть меню */
         transition: transform 0.3s ease; /* Анимация */
 	z-index: 10; /* Чтобы кнопка была поверх меню */
+	position: fixed; /* Фиксированное положение */
     }
 
     .sidebar.active {
