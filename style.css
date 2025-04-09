@@ -116,6 +116,7 @@ header nav a:focus {
 
 .menu-container {
     display: flex;
+    overflow: hidden;
 }
 
 /* --- Side menu --- */
@@ -123,8 +124,8 @@ header nav a:focus {
     min-width: 250px;
     max-width: 40%;
     padding: 1rem;
-    background-color: #f4f4f4;
-    height: 100vh; /* Высота на весь экран */
+    background-color: background-color: rgba(255, 255, 255, 0); /*#f4f4f4;*/
+    height: 100; /* Высота на весь экран */
     top: 0;
 }
 
@@ -147,7 +148,7 @@ header nav a:focus {
 }
 
 .menu-toggle {
-   /* display: none; /* Скрыть кнопку по умолчанию */
+   display: none; /* Скрыть кнопку по умолчанию */
 }
 
 /* --- Main Content --- */
@@ -171,6 +172,8 @@ header nav a:focus {
     .sticked-top20 {
         position: fixed; /* Приклеенное положение */
         top: 200px;
+	width: 240px;
+        padding: 10px;
     }
 }
 /* --- Section Styling (Card-like) --- */
@@ -440,7 +443,7 @@ footer {
     }
 
     .menu-toggle {
-        /*display: block; /* Показать кнопку */
+        display: block; /* Показать кнопку */
 	background-color: var(--text-light);
         color: var(--primary-color);
         padding: 8px 20px; /*10px;*/
